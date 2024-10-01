@@ -13,6 +13,7 @@ parrafo2.classList.add('titulo');
 const parrafo3 = document.createElement('p');
 parrafo3.textContent = '$800 por persona';
 parrafo3.classList.add('precio');
+parrafo3.onclick = nuevaFuncion();
 
 // crear el div...
 const info = document.createElement('div');
@@ -38,3 +39,9 @@ contenedorCard.appendChild(info);
 // Insertarlo en el HTML...
 const contenedor = document.querySelector('.hacer .contenedor-cards');
 contenedor.appendChild(contenedorCard); // al inicio info
+
+
+function nuevaFuncion(){
+    console.log('Nueva funcion');
+}
+
